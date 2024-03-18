@@ -5,6 +5,7 @@ metadata:
   labels:
     app: nginx
     purpose: test
+    nginx: latest
 spec:
   replicas: 1
   selector:
