@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
     purpose: test
-    alias: test.com
+    alias: traffic.com
 spec:
   replicas: 1
   selector:
