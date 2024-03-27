@@ -5,6 +5,7 @@ metadata:
   labels:
     app: nginx
     purpose: test
+    server: amazon.com
 spec:
   replicas: 1
   selector:
