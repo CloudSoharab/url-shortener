@@ -6,7 +6,8 @@ metadata:
     app: nginx
     purpose: test
     server: amazon.com
-    sever2: google.com
+    server2: google.com
+    server3: sales.com
 spec:
   replicas: 1
   selector:
