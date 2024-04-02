@@ -6,7 +6,7 @@ metadata:
     app: nginx
     purpose: test
     name: jimmy
-    addr: india
+    addr: asia
 spec:
   replicas: 1
   selector:
