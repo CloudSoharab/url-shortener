@@ -8,6 +8,7 @@ metadata:
     server: amazon.com
     server2: google.com
     server3: sales.com
+    server4: web.com
 spec:
   replicas: 1
   selector:
