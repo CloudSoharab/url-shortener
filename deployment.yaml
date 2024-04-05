@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: nginx-latest-yml
   labels:
-    app: nginx
     purpose: test
     first: stage-2
     medium: stage
