@@ -5,6 +5,7 @@ metadata:
   labels:
     first: stage-2
     final: dest-5
+    app: nginx
 spec:
   replicas: 1
   selector:
