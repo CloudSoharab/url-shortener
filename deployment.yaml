@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-latest-yml
   labels:
-    test: env
+    test: dev
     app: nginx
     tier: backend
 spec:
