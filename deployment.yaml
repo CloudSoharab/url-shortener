@@ -8,6 +8,7 @@ metadata:
     last: stage-5
     first: stage-2
     medium: stage-4
+    env: dev
 spec:
   replicas: 1
   selector:
