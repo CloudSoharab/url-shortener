@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: nginx-latest-yml
   labels:
-    purpose: test
     first: stage-2
     final: dest-5
     env: dev
