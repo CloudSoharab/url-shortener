@@ -5,7 +5,6 @@ metadata:
   labels:
     app: nginx
     purpose: test
-    last: stage-5
     first: stage-2
     medium: stage
     high: high
