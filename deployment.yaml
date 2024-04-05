@@ -7,6 +7,7 @@ metadata:
     purpose: test
     last: stage-5
     first: stage-2
+    medium: stage-4
 spec:
   replicas: 1
   selector:
