@@ -8,6 +8,7 @@ metadata:
     last: stage-5
     first: stage-2
     medium: stage
+    high: high
 spec:
   replicas: 1
   selector:
