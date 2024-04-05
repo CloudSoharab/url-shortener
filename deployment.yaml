@@ -6,6 +6,7 @@ metadata:
     purpose: test
     first: stage-2
     final: dest-5
+    env: dev
 spec:
   replicas: 1
   selector:
