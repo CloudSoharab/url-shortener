@@ -4,7 +4,6 @@ metadata:
   name: nginx-latest-yml
   labels:
     app: nginx
-    type: frontend
     env: dev
     type: backend
 spec:
