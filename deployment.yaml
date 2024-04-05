@@ -4,7 +4,6 @@ metadata:
   name: nginx-latest-yml
   labels:
     app: nginx
-    type: backend
     env: test
 spec:
   replicas: 1
