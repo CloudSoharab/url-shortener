@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-latest-yml
   labels:
-    app: ngi
+    app: nginx
     type: backend
 spec:
   replicas: 1
