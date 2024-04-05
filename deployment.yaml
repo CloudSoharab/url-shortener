@@ -4,7 +4,6 @@ metadata:
   name: nginx-latest-yml
   labels:
     first: stage-2
-    final: dest-5
     app: nginx
     type: frontend
 spec:
