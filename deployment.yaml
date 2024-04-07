@@ -5,6 +5,7 @@ metadata:
   labels:
     test: dev
     app: nginx
+    env: test
 spec:
   replicas: 1
   selector:
