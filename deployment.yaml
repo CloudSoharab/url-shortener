@@ -6,6 +6,7 @@ metadata:
     test: dev
     app: nginx
     tier: frontend
+    env: sbx
 spec:
   replicas: 1
   selector:
