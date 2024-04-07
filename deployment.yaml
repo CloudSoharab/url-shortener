@@ -5,7 +5,6 @@ metadata:
   labels:
     test: dev
     app: nginx
-    tier: frontend
     env: sbx
     issue: unknown
 spec:
