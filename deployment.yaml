@@ -5,7 +5,6 @@ metadata:
   labels:
     test: dev
     app: nginx
-    env: sbx
     issue: unknown
 spec:
   replicas: 1
