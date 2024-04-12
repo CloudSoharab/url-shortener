@@ -6,7 +6,6 @@ metadata:
     app: nginx
     tier: frontend
     env: test
-    debug: true
 spec:
   replicas: 1
   selector:
