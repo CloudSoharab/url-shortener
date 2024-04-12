@@ -5,6 +5,7 @@ metadata:
   labels:
     app: nginx
     tier: frontend
+    env: test
 spec:
   replicas: 1
   selector:
