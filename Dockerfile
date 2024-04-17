@@ -10,7 +10,7 @@ RUN go mod download && \
     go mod verify && \
     CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
  
-FROM alpine:latest
+FROM sohrabansari376/myalpine:latest
 
 RUN apk --no-cache add ca-certificates
 
