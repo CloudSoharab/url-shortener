@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
     tier: frontend
-    env: test-28
+    env: test-29
 spec:
   replicas: 1
   selector:
