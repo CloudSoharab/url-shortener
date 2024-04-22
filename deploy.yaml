@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: ksoc-github-app
+  name: ksoc-github-app
+  namespace: ksoc-github-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ksoc-github-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ksoc-github-app
+    spec:
+      serviceAccountName: app-sa
+      containers:
+      - image: scan-github-app:latest
+        imagePullPolicy: "Never"
+        name: ksoc-github-app
+        envFrom:
+          - secretRef:
+              name: executor-secret
+        env:
+        - name: GITHUB_CONNECTION_SECRET_NAME
+          value: github-secret
+        - name: FAIL_ON_SEVERITY
+          value: low
+        - name: EXECUTOR_IMAGE
+          value: executor:latest
+        - name: EXECUTOR_SECRET
+          value: executor-secret
+        - name: EXECUTOR_NAMESPACE
+          value: ksoc-github-app
+        - name: EXECUTOR_IMAGE_PULL_POLICY
+          value: Never
+        - name: EXECUTOR_BACKOFF_LIMIT
+          value: "10"
+        - name: POLICY_DIR
+          value: "/app/policy/"
+        - name: TEMPLATE_FILE_PATH
+          value: "/app/output_with_summary.tmpl"
+        - name: KSOC_URL
+          value: http://localhost:4567
+        - name: EXECUTOR_PVC_ACCESS_MODE
+          value: ReadWriteOnce
+        - name: EXECUTOR_PVC_STORAGE_CLASS
+          value: standard
+        - name: EXECUTOR_PVC_STORAGE
+          value: "5Mi"
+        - name: FEATURE_EXECUTOR_PV_SUPPORT
+          value: "false"
+        - name: AWS_REGION
+          value: "us-east-1"
+        - name: AWS_ENDPOINT
+          value: "http://aws-service:80"
+        - name: AWS_ACCESS_KEY_ID
+          value: "test"
+        - name: AWS_SECRET_ACCESS_KEY
+          value: "test"
+        - name: SERVICE_ACCOUNT_NAME
+          value: "app-sa"
